@@ -37,6 +37,14 @@
   name: "retro";
   default: false;
 }
+@plugin "daisyui/theme" {
+  name: "cupcake";
+  default: false;
+}
+@plugin "daisyui/theme" {
+  name: "acid";
+  default: false;
+}
 html {
   scroll-behavior: smooth;
 }

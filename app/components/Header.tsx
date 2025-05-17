@@ -88,6 +88,22 @@ function Header() {
         aria-label="Coffee"
         value="coffee" />
     </li>
+     <li>
+      <input
+        type="radio"
+        name="theme-dropdown"
+        className="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start text-accent"
+        aria-label="Cupcake"
+        value="cupcake" />
+    </li>
+     <li>
+      <input
+        type="radio"
+        name="theme-dropdown"
+        className="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start text-accent"
+        aria-label="Acid"
+        value="acid" />
+    </li>
   </ul>
 </div>
       </li>
