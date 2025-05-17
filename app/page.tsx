@@ -1,103 +1,152 @@
-import Image from "next/image";
+"use client"
+import React from 'react'
 
-export default function Home() {
+function Home() {
+
+  const projects = [
+  {
+    title: "Tiofy",
+    description: "A super app for food delivering, cab booking and hotel booking..",
+    image: "/assets/TiofyLogo.png",
+    repo: "https://github.com/sarwanand24/Tiofy",
+  },
+  {
+    title: "Tiofy Rider",
+    description: "Tiofy Delivery Partner and Rider application.",
+    image: "/assets/TiofyRider.png",
+    repo: "https://github.com/sarwanand24/TiofyRider",
+  },
+  {
+    title: "Tiofy Restaurant",
+    description: "Tiofy Restaurant Partners Application",
+    image: "/assets/TiofyRestro.png",
+    repo: "https://github.com/sarwanand24/TiofyRestaurant",
+  },
+    {
+    title: "Tiofy Server",
+    description: "Server for managing all the api request",
+    image: "https://wallpaperaccess.com/full/4172522.jpg",
+    repo: "https://github.com/sarwanand24/TrioServer",
+  },
+     {
+    title: "FeeBook",
+    description: "An application for all teachers to manage their fees, students and other records.",
+    image: "/assets/Artboard 1.png",
+    repo: "https://github.com/sarwanand24/FeeBook",
+  },
+       {
+    title: "Youtube Backend Clone",
+    description: "This project includes all the backend functionality of Youtube or any video streaming app like comments, likes, subscribers and many other features.",
+    image: "https://static.vecteezy.com/system/resources/previews/018/930/572/original/youtube-logo-youtube-icon-transparent-free-png.png",
+    repo: "https://github.com/sarwanand24/youtube-clone-backend",
+  },
+];
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+   <div className="scroll-smooth">
+  {/* ABOUT SECTION */}
+  <section id="about" className="h-screen pt-[12vh] bg-base-200 flex items-center justify-center text-center">
+    <div>
+      <h1 className="text-5xl md:text-7xl font-bold font-[Arial] text-accent mb-4">
+        Hey, I am Nikhil
+      </h1>
+    <p className="text-2xl md:text-3xl font-medium italic font-mono text-primary">
+  a Full Stack Developer
+</p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
-  );
+  </section>
+
+  {/* WORK SECTION */}
+<section
+  id="work"
+  className="min-h-screen pt-[12vh] bg-secondary text-center px-4 py-10"
+>
+  <h2 className="text-4xl md:text-5xl font-[Arial] font-bold text-accent underline mb-12">
+    These are some of my projects
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+    {projects.map((project, i) => (
+      <div
+        key={i}
+        className="card bg-base-100 w-80 shadow-md rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl duration-300"
+      >
+        <figure className="w-full h-48 overflow-hidden rounded-t-lg">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+        </figure>
+
+        <div className="card-body">
+          <h2 className="card-title text-lg font-bold text-primary">
+            {project.title}
+          </h2>
+          <p className="text-base text-base-content/80">
+            {project.description}
+          </p>
+          <div className="card-actions justify-end mt-4">
+            <a
+              href={project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-sm btn-primary text-accent"
+            >
+              GitHub Repo
+            </a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+ {/* Contact SECTION */}
+<section
+  id="contact"
+  className="h-screen pt-[12vh] bg-base-200 flex flex-col items-center justify-center text-center px-4 font-[Arial]"
+>
+  {/* <h2 className="text-4xl md:text-5xl font-bold text-accent mb-14">
+    Let's Work Together...
+  </h2> */}
+
+   <figure className="diff aspect-16/9 pb-15" tabIndex={0}>
+  <div className="diff-item-1" role="img" tabIndex={0}>
+    <div className="bg-secondary text-accent grid place-content-center text-9xl font-black">
+      Let's work together...
+    </div>
+  </div>
+  <div className="diff-item-2" role="img">
+    <div className="bg-accent grid place-content-center text-9xl font-black text-primary">Let's work together...</div>
+  </div>
+  <div className="diff-resizer"></div>
+</figure>
+
+  <div className="flex space-x-20 pb-15">
+    {/* Email Icon */}
+    <a
+      href="mailto:nikhildhamgay200424@gmail.com"
+      className="text-5xl text-accent hover:text-primary transition-transform duration-300 hover:scale-110"
+      aria-label="Email"
+    >
+      <i className="fas fa-envelope"></i>
+    </a>
+
+    {/* Phone Icon */}
+    <a
+      href="tel:+917550894302"
+      className="text-5xl text-accent hover:text-primary transition-transform duration-300 hover:scale-110"
+      aria-label="Phone"
+    >
+      <i className="fas fa-phone-alt"></i>
+    </a>
+  </div>
+</section>
+
+</div>
+  )
 }
+
+export default Home
