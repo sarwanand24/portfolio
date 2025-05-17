@@ -115,11 +115,11 @@ function Home() {
    <figure className="diff aspect-16/9 pb-15" tabIndex={0}>
   <div className="diff-item-1" role="img" tabIndex={0}>
     <div className="bg-secondary text-accent grid place-content-center text-9xl font-black">
-      Let's work together...
+      Let&apos;s work together...
     </div>
   </div>
   <div className="diff-item-2" role="img">
-    <div className="bg-accent grid place-content-center text-9xl font-black text-primary">Let's work together...</div>
+    <div className="bg-accent grid place-content-center text-9xl font-black text-primary">Let&apos;s work together...</div>
   </div>
   <div className="diff-resizer"></div>
 </figure>
